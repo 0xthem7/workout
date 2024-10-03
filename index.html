@@ -13,7 +13,7 @@
             padding: 0;
         }
 
-        /* Full-width cover image */
+      
         .cover-image {
             background-image: url('https://w.wallhaven.cc/full/jx/wallhaven-jxow7m.png');
             background-size: cover;
@@ -37,7 +37,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: -50px; /* This brings the container closer to the image */
+            margin-top: -50px;
             position: relative;
             z-index: 2;
         }
@@ -62,6 +62,12 @@
             margin-bottom: 10px;
             border-left: 5px solid #4E54C8;
             font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
         }
 
         .footer {
@@ -74,7 +80,7 @@
             font-size: 1rem;
         }
 
-        /* Responsive Styles */
+   
         @media screen and (max-width: 768px) {
             h1 {
                 font-size: 1.8rem;
@@ -119,7 +125,6 @@
 </head>
 <body>
 
-    <!-- Cover Image Section -->
     <div class="cover-image"></div>
 
     <div class="container">
@@ -128,33 +133,33 @@
         <div class="workout-section">
             <h2>Warm-Up (5-10 minutes)</h2>
             <ul>
-                <li>Jumping Jacks – 1 minute</li>
-                <li>High Knees – 1 minute</li>
-                <li>Arm Circles – 30 seconds forward, 30 seconds backward</li>
-                <li>Leg Swings – 30 seconds each leg</li>
+                <li><input type="checkbox">Jumping Jacks – 1 minute</li>
+                <li><input type="checkbox">High Knees – 1 minute</li>
+                <li><input type="checkbox">Arm Circles – 30 seconds forward, 30 seconds backward</li>
+                <li><input type="checkbox">Leg Swings – 30 seconds each leg</li>
             </ul>
         </div>
 
         <div class="workout-section">
             <h2>Main Workout (Repeat 3-4 Times)</h2>
             <ul>
-                <li>Burpees – 10-15 reps</li>
-                <li>Mountain Climbers – 30 reps (15 per leg)</li>
-                <li>Plank to Push-Up – 10-12 reps</li>
-                <li>Bicycle Crunches – 20 reps (10 per side)</li>
-                <li>Leg Raises – 15-20 reps</li>
-                <li>Flutter Kicks – 20-30 seconds</li>
-                <li>Bodyweight Squats – 15-20 reps</li>
-                <li>Plank Hold – 30-60 seconds</li>
+                <li><input type="checkbox">Burpees – 10-15 reps</li>
+                <li><input type="checkbox">Mountain Climbers – 30 reps (15 per leg)</li>
+                <li><input type="checkbox">Plank to Push-Up – 10-12 reps</li>
+                <li><input type="checkbox">Bicycle Crunches – 20 reps (10 per side)</li>
+                <li><input type="checkbox">Leg Raises – 15-20 reps</li>
+                <li><input type="checkbox">Flutter Kicks – 20-30 seconds</li>
+                <li><input type="checkbox">Bodyweight Squats – 15-20 reps</li>
+                <li><input type="checkbox">Plank Hold – 30-60 seconds</li>
             </ul>
         </div>
 
         <div class="workout-section">
             <h2>Cool Down (5-10 minutes)</h2>
             <ul>
-                <li>Cobra Stretch – Hold for 30 seconds</li>
-                <li>Child's Pose – Hold for 30 seconds</li>
-                <li>Hip Flexor Stretch – Hold for 30 seconds each side</li>
+                <li><input type="checkbox">Cobra Stretch – Hold for 30 seconds</li>
+                <li><input type="checkbox">Child's Pose – Hold for 30 seconds</li>
+                <li><input type="checkbox">Hip Flexor Stretch – Hold for 30 seconds each side</li>
             </ul>
         </div>
 
